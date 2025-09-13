@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Jooho Kim — Academic Website</title>
+  <meta name="description" content="Statistics graduate student at Seoul National University. Research: survival analysis, case–cohort, multiple imputation, influence functions." />
+  <link rel="canonical" href="https://Jooho-Git.github.io/" />
+
+  <!-- Open Graph / Twitter -->
+  <meta property="og:title" content="Jooho Kim — Academic Website" />
+  <meta property="og:description" content="Statistics graduate student at SNU. Survival analysis, case–cohort, MI, influence functions." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://github.com/Jooho-Git.png?size=600" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Tailwind (CDN) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = { theme: { extend: {} } };
+  </script>
+
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📊</text></svg>">
+
+  <style>
+    /* Offset for anchor scroll under sticky header */
+    :target { scroll-margin-top: 96px; }
+  </style>
+</head>
+<body class="bg-white text-neutral-900 antialiased">
+  <!-- Header -->
+  <header class="sticky top-0 z-50 border-b border-neutral-200/70 bg-white/90 backdrop-blur">
+    <div class="mx-auto max-w-5xl px-4 py-4 flex items-center justify-between">
+      <a href="#home" class="font-semibold tracking-tight">Jooho Kim</a>
+      <nav class="hidden sm:flex gap-6 text-sm">
+        <a href="#cv" class="hover:underline underline-offset-4">CV</a>
+        <a href="#recent" class="hover:underline underline-offset-4">Recent Works</a>
+        <a href="mailto:youremail@snu.ac.kr" class="hover:underline underline-offset-4">Email</a>
+        <a href="https://github.com/Jooho-Git" target="_blank" class="hover:underline underline-offset-4">GitHub</a>
+        <a href="https://www.linkedin.com/in/yourhandle" target="_blank" class="hover:underline underline-offset-4">LinkedIn</a>
+      </nav>
+      <button id="themeToggle" aria-label="Toggle dark mode" class="rounded-xl border px-3 py-1 text-sm border-neutral-300">🌙</button>
+    </div>
+  </header>
+
+  <main id="home" class="mx-auto max-w-5xl px-4">
+    <!-- Hero (with soft gradient + optional background image 'assets/bg.jpg') -->
+    <section class="relative py-12 sm:py-16">
+      <div class="absolute inset-0 -z-10 bg-gradient-to-b from-sky-50 to-white"></div>
+      <div class="absolute inset-0 -z-10 bg-center bg-cover opacity-20" style="background-image:url('assets/bg.jpg');"></div>
+
+      <div class="grid gap-10 sm:grid-cols-[220px_1fr] items-center">
+        <div class="flex justify-center sm:justify-start">
+          <!-- GitHub profile avatar (auto-updates when you change it on GitHub) -->
+          <img src="https://github.com/Jooho-Git.png?size=400" alt="Portrait of Jooho Kim" class="h-52 w-52 rounded-2xl object-cover ring-1 ring-neutral-200"/>
+        </div>
+        <div>
+          <h1 class="text-3xl sm:text-4xl font-bold tracking-tight">Jooho Kim</h1>
+          <p class="mt-2 text-base/relaxed text-neutral-700">
+            Statistics Graduate Student, <span class="whitespace-nowrap">Seoul National University</span>.
+            I study <strong>survival analysis</strong>, <strong>case–cohort / nested case–control designs</strong>,
+            and <strong>multiple imputation</strong>, with a focus on <strong>influence-function–based sampling</strong>
+            and <strong>weight calibration</strong>.
+          </p>
+          <div class="mt-4 flex flex-wrap gap-3">
+            <a href="cv.pdf" class="rounded-xl border px-4 py-2 text-sm font-medium border-neutral-300 hover:bg-neutral-50" download>Download CV (PDF)</a>
+            <a href="#recent" class="rounded-xl border px-4 py-2 text-sm font-medium border-neutral-300 hover:bg-neutral-50">Recent Works</a>
+            <a href="mailto:youremail@snu.ac.kr" class="rounded-xl border px-4 py-2 text-sm font-medium border-neutral-300 hover:bg-neutral-50">Email</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CV section (embed removed for compactness) -->
+    <section id="cv" class="py-10 border-t border-neutral-200/70">
+      <div class="flex items-center justify-between">
+        <h2 class="text-2xl font-semibold tracking-tight">CV</h2>
+        <a href="cv.pdf" class="text-sm underline underline-offset-4" download>Download PDF</a>
+      </div>
+      <p class="mt-3 text-sm text-neutral-600">
+        For full details, please see the PDF. A condensed selection appears above in Recent Works.
+      </p>
+    </section>
+
+    <!-- Publications section (commented out until available) -->
+    <!--
+    <section id="publications" class="py-12 border-t border-neutral-200/70">
+      <h2 class="text-2xl font-semibold tracking-tight">Publications & Preprints</h2>
+      <p class="mt-2 text-sm text-neutral-600">Author order shown as in manuscript. ✱ indicates corresponding author.</p>
+      ...
+    </section>
+    -->
+
+    <!-- Recent Works section -->
+    <section id="recent" class="py-12 border-t border-neutral-200/70">
+      <h2 class="text-2xl font-semibold tracking-tight">Recent Works</h2>
+      <div class="mt-6 grid sm:grid-cols-2 gap-8">
+        <!-- Work 1 -->
+        <article class="rounded-2xl border border-neutral-200 p-4 bg-white/80">
+          <!-- Put your image at assets/work1.jpg -->
+          <img src="assets/work1.jpg" alt="Paper in preparation image" class="w-full h-48 object-cover rounded-xl mb-4"/>
+          <h3 class="text-lg font-medium">Paper in Preparation</h3>
+          <p class="mt-2 text-sm text-neutral-600">
+            Influence-based super-sampling with weight calibration for efficient multiple imputation in case–cohort studies.
+          </p>
+        </article>
+
+        <!-- Work 2 -->
+        <article class="rounded-2xl border border-neutral-200 p-4 bg-white/80">
+          <!-- Put your image at assets/work2.jpg -->
+          <img src="assets/work2.jpg" alt="Talk image" class="w-full h-48 object-cover rounded-xl mb-4"/>
+          <h3 class="text-lg font-medium">Talk</h3>
+          <p class="mt-2 text-sm text-neutral-600">
+            Presented recent advances in survival analysis and multiple imputation at SNU Department of Statistics seminar.
+          </p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="mt-12 border-t border-neutral-200/70">
+    <div class="mx-auto max-w-5xl px-4 py-8 text-sm text-neutral-600">
+      <div class="flex flex-wrap items-center justify-between gap-4">
+        <p>© <span id="year"></span> Jooho Kim. All rights reserved.</p>
+        <div class="flex items-center gap-3">
+          <a href="mailto:youremail@snu.ac.kr" class="underline underline-offset-4">youremail@snu.ac.kr</a>
+          <span aria-hidden="true">·</span>
+          <a href="https://scholar.google.com/" class="underline underline-offset-4">Scholar</a>
+          <span aria-hidden="true">·</span>
+          <a href="https://github.com/Jooho-Git" class="underline underline-offset-4">GitHub</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Year
+    document.getElementById('year').textContent = new Date().getFullYear();
+    // Theme toggle (simple light/dark)
+    const btn = document.getElementById('themeToggle');
+    const root = document.documentElement;
+    const apply = () => {
+      if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        root.classList.add('dark'); btn.textContent = '☀️';
+        document.body.classList.add('dark:bg-neutral-950','dark:text-neutral-100');
+      } else {
+        root.classList.remove('dark'); btn.textContent = '🌙';
+        document.body.classList.remove('dark:bg-neutral-950','dark:text-neutral-100');
+      }
+    };
+    btn.addEventListener('click', () => {
+      localStorage.theme = root.classList.contains('dark') ? 'light' : 'dark';
+      apply();
+    });
+    // Default to light (brighter)
+    localStorage.theme = localStorage.theme || 'light';
+    apply();
+  </script>
+</body>
+</html>
