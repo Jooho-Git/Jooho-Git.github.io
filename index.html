@@ -36,9 +36,9 @@
       <nav class="hidden sm:flex gap-6 text-sm">
         <a href="#cv" class="hover:underline underline-offset-4">CV</a>
         <a href="#recent" class="hover:underline underline-offset-4">Recent Works</a>
-        <a href="mailto:youremail@snu.ac.kr" class="hover:underline underline-offset-4">Email</a>
+        <!--a href="mailto:youremail@snu.ac.kr" class="hover:underline underline-offset-4">Email</a-->
         <a href="https://github.com/Jooho-Git" target="_blank" class="hover:underline underline-offset-4">GitHub</a>
-        <a href="https://www.linkedin.com/in/yourhandle" target="_blank" class="hover:underline underline-offset-4">LinkedIn</a>
+        <a href="https://www.linkedin.com/in/jooho-kim-757899245/" target="_blank" class="hover:underline underline-offset-4">LinkedIn</a>
       </nav>
       <button id="themeToggle" aria-label="Toggle dark mode" class="rounded-xl border px-3 py-1 text-sm border-neutral-300">🌙</button>
     </div>
@@ -48,7 +48,7 @@
     <!-- Hero (with soft gradient + optional background image 'assets/bg.jpg') -->
     <section class="relative py-12 sm:py-16">
       <div class="absolute inset-0 -z-10 bg-gradient-to-b from-sky-50 to-white"></div>
-      <div class="absolute inset-0 -z-10 bg-center bg-cover opacity-20" style="background-image:url('assets/bg.jpg');"></div>
+      <div class="absolute inset-0 -z-10 bg-center bg-cover opacity-20" style="background-image:url('assets/background.jpg');"></div>
 
       <div class="grid gap-10 sm:grid-cols-[220px_1fr] items-center">
         <div class="flex justify-center sm:justify-start">
@@ -58,7 +58,7 @@
         <div>
           <h1 class="text-3xl sm:text-4xl font-bold tracking-tight">Jooho Kim</h1>
           <p class="mt-2 text-base/relaxed text-neutral-700">
-            Statistics Graduate Student, <span class="whitespace-nowrap">Seoul National University</span>.
+            I am a Master student in Statistics at Seoul National University. Hi, my name is Jooho KimStatistics Graduate Student, <span class="whitespace-nowrap">Seoul National University</span>.
             I study <strong>survival analysis</strong>, <strong>case–cohort / nested case–control designs</strong>,
             and <strong>multiple imputation</strong>, with a focus on <strong>influence-function–based sampling</strong>
             and <strong>weight calibration</strong>.
@@ -66,7 +66,8 @@
           <div class="mt-4 flex flex-wrap gap-3">
             <a href="cv.pdf" class="rounded-xl border px-4 py-2 text-sm font-medium border-neutral-300 hover:bg-neutral-50" download>Download CV (PDF)</a>
             <a href="#recent" class="rounded-xl border px-4 py-2 text-sm font-medium border-neutral-300 hover:bg-neutral-50">Recent Works</a>
-            <a href="mailto:youremail@snu.ac.kr" class="rounded-xl border px-4 py-2 text-sm font-medium border-neutral-300 hover:bg-neutral-50">Email</a>
+            <a href="#teaching" class="rounded-xl border px-4 py-2 text-sm font-medium border-neutral-300 hover:bg-neutral-50">Teaching</a>
+            <!--a href="mailto:youremail@snu.ac.kr" class="rounded-xl border px-4 py-2 text-sm font-medium border-neutral-300 hover:bg-neutral-50">Email</a-->
           </div>
         </div>
       </div>
@@ -109,7 +110,7 @@
         <!-- Work 2 -->
         <article class="rounded-2xl border border-neutral-200 p-4 bg-white/80">
           <!-- Put your image at assets/work2.jpg -->
-          <img src="assets/work2.jpg" alt="Talk image" class="w-full h-48 object-cover rounded-xl mb-4"/>
+          <img src="assets/talk.jpg" alt="Talk image" class="w-full h-48 object-cover rounded-xl mb-4"/>
           <h3 class="text-lg font-medium">Talk</h3>
           <p class="mt-2 text-sm text-neutral-600">
             Presented recent advances in survival analysis and multiple imputation at SNU Department of Statistics seminar.
@@ -119,16 +120,44 @@
     </section>
   </main>
 
+  <!-- Teaching section -->
+  <section id="teaching" class="py-12 border-t border-neutral-200/70">
+    <h2 class="text-2xl font-semibold tracking-tight">Teaching Assistantship</h2>
+    <div class="mt-6 space-y-6">
+
+      <!-- Course 1 -->
+      <article class="rounded-2xl border border-neutral-200 p-4 bg-white/80">
+        <h3 class="text-lg font-medium">Survival Data Analysis and Lab <span class="text-sm text-neutral-500">(Fall 2025)</span></h3>
+      </article>
+
+      <!-- Course 2 -->
+      <article class="rounded-2xl border border-neutral-200 p-4 bg-white/80">
+        <h3 class="text-lg font-medium">Selected Topics Seminar <span class="text-sm text-neutral-500">(Spring 2025)</span></h3>
+      </article>
+
+      <!-- Course 3 -->
+      <article class="rounded-2xl border border-neutral-200 p-4 bg-white/80">
+        <h3 class="text-lg font-medium">Mathematical Statistics 2 <span class="text-sm text-neutral-500">(Fall 2024)</span></h3>
+      </article>
+
+      <!-- Course 4 -->
+      <article class="rounded-2xl border border-neutral-200 p-4 bg-white/80">
+        <h3 class="text-lg font-medium">Statistics Lab <span class="text-sm text-neutral-500">(Spring 2024)</span></h3>
+      </article>
+
+    </div>
+  </section>
+  
   <footer class="mt-12 border-t border-neutral-200/70">
     <div class="mx-auto max-w-5xl px-4 py-8 text-sm text-neutral-600">
       <div class="flex flex-wrap items-center justify-between gap-4">
         <p>© <span id="year"></span> Jooho Kim. All rights reserved.</p>
         <div class="flex items-center gap-3">
-          <a href="mailto:youremail@snu.ac.kr" class="underline underline-offset-4">youremail@snu.ac.kr</a>
-          <span aria-hidden="true">·</span>
-          <a href="https://scholar.google.com/" class="underline underline-offset-4">Scholar</a>
-          <span aria-hidden="true">·</span>
-          <a href="https://github.com/Jooho-Git" class="underline underline-offset-4">GitHub</a>
+          <!--a href="mailto:youremail@snu.ac.kr" class="underline underline-offset-4">youremail@snu.ac.kr</a-->
+          <!--span aria-hidden="true">·</span-->
+          <!--a href="https://scholar.google.com/" class="underline underline-offset-4">Scholar</a-->
+          <!--span aria-hidden="true">·</span-->
+          <!--a href="https://github.com/Jooho-Git" class="underline underline-offset-4">GitHub</a-->
         </div>
       </div>
     </div>
