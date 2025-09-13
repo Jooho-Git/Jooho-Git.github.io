@@ -4,12 +4,11 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Jooho Kim — Academic Website</title>
-  <meta name="description" content="Statistics graduate student at Seoul National University. Research: survival analysis, case–cohort, multiple imputation, influence functions." />
   <link rel="canonical" href="https://Jooho-Git.github.io/" />
 
   <!-- Open Graph / Twitter -->
   <meta property="og:title" content="Jooho Kim — Academic Website" />
-  <meta property="og:description" content="Statistics graduate student at SNU. Survival analysis, case–cohort, MI, influence functions." />
+  <meta property="og:description" content="Statistics graduate student" />
   <meta property="og:type" content="website" />
   <meta property="og:image" content="https://github.com/Jooho-Git.png?size=600" />
   <meta name="twitter:card" content="summary_large_image" />
@@ -21,7 +20,7 @@
   </script>
 
   <!-- Favicon -->
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📊</text></svg>">
+  <link rel="icon" type="image/png" href="assets/favicon_JK.png">
 
   <style>
     /* Offset for anchor scroll under sticky header */
@@ -39,8 +38,6 @@
         <!--a href="mailto:youremail@snu.ac.kr" class="hover:underline underline-offset-4">Email</a-->
         <a href="https://github.com/Jooho-Git" target="_blank" class="hover:underline underline-offset-4">GitHub</a>
         <a href="https://www.linkedin.com/in/jooho-kim-757899245/" target="_blank" class="hover:underline underline-offset-4">LinkedIn</a>
-      <!--/nav-->
-      <!--button id="themeToggle" aria-label="Toggle dark mode" class="rounded-xl border px-3 py-1 text-sm border-neutral-300">🌙</button-->
     </div>
   </header>
 
@@ -48,7 +45,7 @@
     <!-- Hero (with soft gradient + optional background image 'assets/bg.jpg') -->
     <section class="relative py-12 sm:py-16">
       <!--div class="absolute inset-0 -z-10 bg-gradient-to-b from-sky-50 to-white"></div-->
-      <div class="absolute inset-0 -z-10 bg-center bg-cover opacity-20" style="background-image:url('assets/background.jpg');"></div>
+      <div class="absolute inset-0 -z-10 bg-center bg-cover opacity-50" style="background-image:url('assets/background.jpg');"></div>
 
       <div class="grid gap-10 sm:grid-cols-[220px_1fr] items-center">
         <div class="flex justify-center sm:justify-start">
@@ -58,11 +55,12 @@
         <div>
           <h1 class="text-3xl sm:text-4xl font-bold tracking-tight">Jooho Kim</h1>
           <p class="mt-2 text-base/relaxed text-neutral-700">
-            Hi, welcome to my website. I am a Master’s student in the <a href="https://stat.snu.ac.kr/en/" target="_blank">Department of Statistics at Seoul National University</a>, 
+            Hi, welcome to my website. I am a Master’s student in the 
+            <a href="https://stat.snu.ac.kr/en/" target="_blank" class="text-blue-600 underline">Department of Statistics at Seoul National University</a>, 
             advised by Professor Yei Eun Shin. My research focuses on multiple imputation for incomplete survival data with missing covariates. 
-            My Master’s program is supported by a fellowship from the National Research Foundation of Korea. 
+            My Master’s program is supported by a graduate fellowship from the National Research Foundation of Korea. 
             Previously, I received my Bachelor’s degree in Food and Resource Economics and Statistics from 
-            <a href="https://www.korea.edu/sites/en/index.do" target="_blank">Korea University</a>.
+            <a href="https://www.korea.edu/sites/en/index.do" target="_blank" class="text-blue-600 underline">Korea University</a>.
           </p>
           <div class="mt-4 flex flex-wrap gap-3">
             <a href="cv.pdf" class="rounded-xl border px-4 py-2 text-sm font-medium border-neutral-300 hover:bg-neutral-50" download>Download CV (PDF)</a>
@@ -76,22 +74,17 @@
 
     <section id="research" class="py-12 border-t border-neutral-200/70">
       <h2 class="text-2xl font-semibold tracking-tight">Research Interests</h2>
-      <p class="mt-4 text-neutral-700">
-        My research interest spans both classical and modern domains.<br>
-        On the methodological side, I focus on <strong>missing data</strong>, <strong>survival analysis</strong>, and <strong>causal inference</strong>.<br>
-        At the intersection of statistics and AI, I am interested in <strong>statistical uncertainty quantification for deep learning models</strong>.
-      </p>
+      <p class="mt-1">My research interest spans both classical and modern domains.</p>
+      <p class="mt-1">On the methodological side, I focus on <strong>missing data</strong>, <strong>survival analysis</strong>, and <strong>causal inference</strong>.</p>
+      <p class="mt-1">At the intersection of statistics and AI, I am interested in <strong>statistical uncertainty quantification for deep learning models</strong>.</p>
     </section>
 
     <!-- CV section (embed removed for compactness) -->
     <section id="cv" class="py-10 border-t border-neutral-200/70">
       <div class="flex items-center justify-between">
         <h2 class="text-2xl font-semibold tracking-tight">CV</h2>
-        <a href="cv.pdf" class="text-sm underline underline-offset-4" download>Download PDF</a>
+        <!--a href="cv.pdf" class="text-sm underline underline-offset-4" download>Download PDF</a-->
       </div>
-      <p class="mt-3 text-sm text-neutral-600">
-        For full details, please see the PDF. A condensed selection appears above in Recent Works.
-      </p>
       <object data="cv.pdf" type="application/pdf" class="w-full h-64 rounded-xl mt-4">
         <p>View my <a class="underline" href="cv.pdf">CV (PDF)</a>.</p>
       </object>
@@ -126,7 +119,7 @@
           <img src="assets/talk.jpg" alt="Talk image" class="w-full h-48 object-cover rounded-xl mb-4"/>
           <h3 class="text-lg font-medium">Presentation at the 2nd Symposium on Causal Inference</h3>
           <p class="mt-2 text-sm text-neutral-600">
-            Presented research on multiple imputation for incomplete survival data with missing covariates and on the discussion of causal estimands in survival analysis.
+            "Multiple imputation for incomplete survival data with missing covariates: Toward valid causal inference"
           </p>
         </article>
       </div>
@@ -135,14 +128,16 @@
 
   <!-- Teaching section -->
   <section id="teaching" class="py-12 border-t border-neutral-200/70">
-    <h2 class="text-2xl font-semibold tracking-tight text-blue-800">Teaching</h2>
-    <h3 class="mt-2 text-lg font-medium">Teaching Assistant at Seoul National University</h3>
-    <ul class="list-disc list-inside mt-4 space-y-2 text-neutral-700">
-      <li>Fall 2025: Survival Data Analysis and Lab (Advanced Undergraduate Course)</li>
-      <li>Spring 2025: Selected Topics Seminar (Introductory Undergraduate Course)</li>
-      <li>Fall 2024: Mathematical Statistics 2 (Core Undergraduate Course)</li>
-      <li>Spring 2024: Statistics Lab (Introductory Undergraduate Course)</li>
-    </ul>
+    <div class="mx-auto max-w-5xl px-4">
+      <h2 class="text-2xl font-semibold tracking-tight text-blue-800">Teaching</h2>
+      <h3 class="mt-2 text-lg font-medium">Teaching Assistant at Seoul National University</h3>
+      <ul class="list-disc list-inside mt-4 space-y-2 text-neutral-700">
+        <li>Fall 2025: Survival Data Analysis and Lab</li>
+        <li>Spring 2025: Selected Topics Seminar</li>
+        <li>Fall 2024: Mathematical Statistics 2</li>
+        <li>Spring 2024: Statistics Lab</li>
+      </ul>
+    </div>
   </section>
   
   <footer class="mt-12 border-t border-neutral-200/70">
