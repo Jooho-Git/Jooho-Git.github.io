@@ -39,15 +39,15 @@
         <!--a href="mailto:youremail@snu.ac.kr" class="hover:underline underline-offset-4">Email</a-->
         <a href="https://github.com/Jooho-Git" target="_blank" class="hover:underline underline-offset-4">GitHub</a>
         <a href="https://www.linkedin.com/in/jooho-kim-757899245/" target="_blank" class="hover:underline underline-offset-4">LinkedIn</a>
-      </nav>
-      <button id="themeToggle" aria-label="Toggle dark mode" class="rounded-xl border px-3 py-1 text-sm border-neutral-300">🌙</button>
+      <!--/nav-->
+      <!--button id="themeToggle" aria-label="Toggle dark mode" class="rounded-xl border px-3 py-1 text-sm border-neutral-300">🌙</button-->
     </div>
   </header>
 
   <main id="home" class="mx-auto max-w-5xl px-4">
     <!-- Hero (with soft gradient + optional background image 'assets/bg.jpg') -->
     <section class="relative py-12 sm:py-16">
-      <div class="absolute inset-0 -z-10 bg-gradient-to-b from-sky-50 to-white"></div>
+      <!--div class="absolute inset-0 -z-10 bg-gradient-to-b from-sky-50 to-white"></div-->
       <div class="absolute inset-0 -z-10 bg-center bg-cover opacity-20" style="background-image:url('assets/background.jpg');"></div>
 
       <div class="grid gap-10 sm:grid-cols-[220px_1fr] items-center">
@@ -58,10 +58,11 @@
         <div>
           <h1 class="text-3xl sm:text-4xl font-bold tracking-tight">Jooho Kim</h1>
           <p class="mt-2 text-base/relaxed text-neutral-700">
-            I am a Master student in Statistics at Seoul National University. Hi, my name is Jooho KimStatistics Graduate Student, <span class="whitespace-nowrap">Seoul National University</span>.
-            I study <strong>survival analysis</strong>, <strong>case–cohort / nested case–control designs</strong>,
-            and <strong>multiple imputation</strong>, with a focus on <strong>influence-function–based sampling</strong>
-            and <strong>weight calibration</strong>.
+            Hi, welcome to my website. I am a Master’s student in the <a href="https://stat.snu.ac.kr/en/" target="_blank">Department of Statistics at Seoul National University</a>, 
+            advised by Professor Yei Eun Shin. My research focuses on multiple imputation for incomplete survival data with missing covariates. 
+            My Master’s program is supported by a fellowship from the National Research Foundation of Korea. 
+            Previously, I received my Bachelor’s degree in Food and Resource Economics and Statistics from 
+            <a href="https://www.korea.edu/sites/en/index.do" target="_blank">Korea University</a>.
           </p>
           <div class="mt-4 flex flex-wrap gap-3">
             <a href="cv.pdf" class="rounded-xl border px-4 py-2 text-sm font-medium border-neutral-300 hover:bg-neutral-50" download>Download CV (PDF)</a>
@@ -73,6 +74,15 @@
       </div>
     </section>
 
+    <section id="research" class="py-12 border-t border-neutral-200/70">
+      <h2 class="text-2xl font-semibold tracking-tight">Research Interests</h2>
+      <p class="mt-4 text-neutral-700">
+        My research interest spans both classical and modern domains.<br>
+        On the methodological side, I focus on <strong>missing data</strong>, <strong>survival analysis</strong>, and <strong>causal inference</strong>.<br>
+        At the intersection of statistics and AI, I am interested in <strong>statistical uncertainty quantification for deep learning models</strong>.
+      </p>
+    </section>
+
     <!-- CV section (embed removed for compactness) -->
     <section id="cv" class="py-10 border-t border-neutral-200/70">
       <div class="flex items-center justify-between">
@@ -82,6 +92,9 @@
       <p class="mt-3 text-sm text-neutral-600">
         For full details, please see the PDF. A condensed selection appears above in Recent Works.
       </p>
+      <object data="cv.pdf" type="application/pdf" class="w-full h-64 rounded-xl mt-4">
+        <p>View my <a class="underline" href="cv.pdf">CV (PDF)</a>.</p>
+      </object>
     </section>
 
     <!-- Publications section (commented out until available) -->
@@ -103,7 +116,7 @@
           <img src="assets/work1.jpg" alt="Paper in preparation image" class="w-full h-48 object-cover rounded-xl mb-4"/>
           <h3 class="text-lg font-medium">Paper in Preparation</h3>
           <p class="mt-2 text-sm text-neutral-600">
-            Influence-based super-sampling with weight calibration for efficient multiple imputation in case–cohort studies.
+            "Influence-Based Super-Sampling for Efficient Multiple Imputation in Case–Cohort Studies"
           </p>
         </article>
 
@@ -111,9 +124,9 @@
         <article class="rounded-2xl border border-neutral-200 p-4 bg-white/80">
           <!-- Put your image at assets/work2.jpg -->
           <img src="assets/talk.jpg" alt="Talk image" class="w-full h-48 object-cover rounded-xl mb-4"/>
-          <h3 class="text-lg font-medium">Talk</h3>
+          <h3 class="text-lg font-medium">Presentation at the 2nd Symposium on Causal Inference</h3>
           <p class="mt-2 text-sm text-neutral-600">
-            Presented recent advances in survival analysis and multiple imputation at SNU Department of Statistics seminar.
+            Presented research on multiple imputation for incomplete survival data with missing covariates and on the discussion of causal estimands in survival analysis.
           </p>
         </article>
       </div>
@@ -122,30 +135,14 @@
 
   <!-- Teaching section -->
   <section id="teaching" class="py-12 border-t border-neutral-200/70">
-    <h2 class="text-2xl font-semibold tracking-tight">Teaching Assistantship</h2>
-    <div class="mt-6 space-y-6">
-
-      <!-- Course 1 -->
-      <article class="rounded-2xl border border-neutral-200 p-4 bg-white/80">
-        <h3 class="text-lg font-medium">Survival Data Analysis and Lab <span class="text-sm text-neutral-500">(Fall 2025)</span></h3>
-      </article>
-
-      <!-- Course 2 -->
-      <article class="rounded-2xl border border-neutral-200 p-4 bg-white/80">
-        <h3 class="text-lg font-medium">Selected Topics Seminar <span class="text-sm text-neutral-500">(Spring 2025)</span></h3>
-      </article>
-
-      <!-- Course 3 -->
-      <article class="rounded-2xl border border-neutral-200 p-4 bg-white/80">
-        <h3 class="text-lg font-medium">Mathematical Statistics 2 <span class="text-sm text-neutral-500">(Fall 2024)</span></h3>
-      </article>
-
-      <!-- Course 4 -->
-      <article class="rounded-2xl border border-neutral-200 p-4 bg-white/80">
-        <h3 class="text-lg font-medium">Statistics Lab <span class="text-sm text-neutral-500">(Spring 2024)</span></h3>
-      </article>
-
-    </div>
+    <h2 class="text-2xl font-semibold tracking-tight text-blue-800">Teaching</h2>
+    <h3 class="mt-2 text-lg font-medium">Teaching Assistant at Seoul National University</h3>
+    <ul class="list-disc list-inside mt-4 space-y-2 text-neutral-700">
+      <li>Fall 2025: Survival Data Analysis and Lab (Advanced Undergraduate Course)</li>
+      <li>Spring 2025: Selected Topics Seminar (Introductory Undergraduate Course)</li>
+      <li>Fall 2024: Mathematical Statistics 2 (Core Undergraduate Course)</li>
+      <li>Spring 2024: Statistics Lab (Introductory Undergraduate Course)</li>
+    </ul>
   </section>
   
   <footer class="mt-12 border-t border-neutral-200/70">
@@ -166,25 +163,6 @@
   <script>
     // Year
     document.getElementById('year').textContent = new Date().getFullYear();
-    // Theme toggle (simple light/dark)
-    const btn = document.getElementById('themeToggle');
-    const root = document.documentElement;
-    const apply = () => {
-      if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-        root.classList.add('dark'); btn.textContent = '☀️';
-        document.body.classList.add('dark:bg-neutral-950','dark:text-neutral-100');
-      } else {
-        root.classList.remove('dark'); btn.textContent = '🌙';
-        document.body.classList.remove('dark:bg-neutral-950','dark:text-neutral-100');
-      }
-    };
-    btn.addEventListener('click', () => {
-      localStorage.theme = root.classList.contains('dark') ? 'light' : 'dark';
-      apply();
-    });
-    // Default to light (brighter)
-    localStorage.theme = localStorage.theme || 'light';
-    apply();
   </script>
 </body>
 </html>
