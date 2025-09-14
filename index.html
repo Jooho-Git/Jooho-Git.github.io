@@ -32,21 +32,22 @@
   <header class="sticky top-0 z-50 border-b border-neutral-200/70 bg-white/90 backdrop-blur">
     <div class="mx-auto max-w-5xl px-4 py-4 flex items-center justify-between">
       <a href="#home" class="font-semibold tracking-tight">Jooho Kim</a>
+      <div class="relative">
+        <button id="menu-btn" class="flex flex-col space-y-1.5 ml-4">
+          <span class="block w-6 h-0.5 bg-black"></span>
+          <span class="block w-6 h-0.5 bg-black"></span>
+          <span class="block w-6 h-0.5 bg-black"></span>
+        </button>
 
-      <button id="menu-btn" class="flex flex-col space-y-1.5 ml-4">
-        <span class="block w-6 h-0.5 bg-black"></span>
-        <span class="block w-6 h-0.5 bg-black"></span>
-        <span class="block w-6 h-0.5 bg-black"></span>
-      </button>
+        <nav id="menu" class="hidden absolute top-full right-0 mt-2 w-40 flex-col bg-white border rounded-xl shadow-md p-2 space-y-2 z-50">  
+          <a href="#cv" class="hover:underline underline-offset-4">CV</a>
+          <a href="#recent" class="hover:underline underline-offset-4">Recent Works</a>
+          <a href="#teaching" class="hover:underline underline-offset-4">Teaching</a>
+          <a href="https://github.com/Jooho-Git" target="_blank" rel="noopener" class="hover:underline underline-offset-4">GitHub</a>
+          <a href="https://www.linkedin.com/in/jooho-kim-757899245/" target="_blank" rel="noopener" class="hover:underline underline-offset-4">LinkedIn</a>
+        </nav>
+      </div>
     </div>
-
-    <nav id="menu" class="hidden flex flex-col absolute right-4 top-full bg-white border rounded-xl shadow-md p-2 space-y-2 z-50">
-      <a href="#cv" class="hover:underline underline-offset-4">CV</a>
-      <a href="#recent" class="hover:underline underline-offset-4">Recent Works</a>
-      <a href="#teaching" class="hover:underline underline-offset-4">Teaching</a>
-      <a href="https://github.com/Jooho-Git" target="_blank" rel="noopener" class="hover:underline underline-offset-4">GitHub</a>
-      <a href="https://www.linkedin.com/in/jooho-kim-757899245/" target="_blank" rel="noopener" class="hover:underline underline-offset-4">LinkedIn</a>
-    </nav>
   </header>
 
   <main id="home" class="mx-auto max-w-5xl px-4">
