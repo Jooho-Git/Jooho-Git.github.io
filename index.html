@@ -32,19 +32,24 @@
   <header class="sticky top-0 z-50 border-b border-neutral-200/70 bg-white/90 backdrop-blur">
     <div class="mx-auto max-w-5xl px-4 py-4 flex items-center justify-between">
       <a href="#home" class="font-semibold tracking-tight">Jooho Kim</a>
-      <nav class="hidden sm:flex gap-6 text-sm">
+      <nav class="flex flex-wrap gap-4 text-sm">
         <a href="#cv" class="hover:underline underline-offset-4">CV</a>
         <a href="#recent" class="hover:underline underline-offset-4">Recent Works</a>
-        <!--a href="mailto:youremail@snu.ac.kr" class="hover:underline underline-offset-4">Email</a-->
+        <a href="#teaching" class="hover:underline underline-offset-4">Teaching</a>
+        <a href="https://github.com/Jooho-Git" target="_blank" rel="noopener" class="hover:underline underline-offset-4">GitHub</a>
+        <a href="https://www.linkedin.com/in/jooho-kim-757899245/" target="_blank" rel="noopener" class="hover:underline underline-offset-4">LinkedIn</a>
+      </nav>
+    </div>
+  </header>
+  
+      <nav class="hidden sm:flex gap-6 text-sm">
         <a href="https://github.com/Jooho-Git" target="_blank" class="hover:underline underline-offset-4">GitHub</a>
         <a href="https://www.linkedin.com/in/jooho-kim-757899245/" target="_blank" class="hover:underline underline-offset-4">LinkedIn</a>
     </div>
   </header>
 
   <main id="home" class="mx-auto max-w-5xl px-4">
-    <!-- Hero (with soft gradient + optional background image 'assets/bg.jpg') -->
     <section class="relative py-12 sm:py-16">
-      <!--div class="absolute inset-0 -z-10 bg-gradient-to-b from-sky-50 to-white"></div-->
       <div class="absolute inset-0 -z-10 bg-center bg-cover opacity-50" style="background-image:url('assets/background.jpg');"></div>
 
       <div class="grid gap-10 sm:grid-cols-[220px_1fr] items-center">
@@ -67,7 +72,8 @@
             <a href="cv.pdf" class="rounded-xl border px-4 py-2 text-sm font-medium border-neutral-300 hover:bg-neutral-50" download>Download CV (PDF)</a>
             <a href="#recent" class="rounded-xl border px-4 py-2 text-sm font-medium border-neutral-300 hover:bg-neutral-50">Recent Works</a>
             <a href="#teaching" class="rounded-xl border px-4 py-2 text-sm font-medium border-neutral-300 hover:bg-neutral-50">Teaching</a>
-            <!--a href="mailto:youremail@snu.ac.kr" class="rounded-xl border px-4 py-2 text-sm font-medium border-neutral-300 hover:bg-neutral-50">Email</a-->
+            <a href="https://github.com/Jooho-Git" class="rounded-xl border px-4 py-2 text-sm font-medium border-neutral-300 hover:bg-neutral-50">GitHub</a>
+            <a href="https://www.linkedin.com/in/jooho-kim-757899245/" class="rounded-xl border px-4 py-2 text-sm font-medium border-neutral-300 hover:bg-neutral-50">LinkedIn</a>
           </div>
         </div>
       </div>
@@ -84,11 +90,20 @@
     <section id="cv" class="py-10 border-t border-neutral-200/70">
       <div class="flex items-center justify-between">
         <h2 class="text-2xl font-semibold tracking-tight">CV</h2>
-        <!--a href="cv.pdf" class="text-sm underline underline-offset-4" download>Download PDF</a-->
       </div>
-      <object data="cv.pdf" type="application/pdf" class="w-full h-64 rounded-xl mt-4">
-        <p>View my <a class="underline" href="cv.pdf">CV (PDF)</a>.</p>
-      </object>
+
+      <!-- Embed pdf in Desktop -->
+      <div class="hidden md:block">
+        <object data="cv.pdf?v=2" type="application/pdf" class="w-full h-[28rem] rounded-xl mt-4">
+          <p>Open my <a class="underline" href="cv.pdf?v=2">CV (PDF)</a>.</p>
+        </object>
+      </div>
+
+      <!-- Embed pdf in Mobile -->
+      <div class="md:hidden mt-4">
+        <a href="cv.pdf?v=2"
+           class="inline-flex items-center rounded-xl border px-4 py-2 text-sm font-medium border-neutral-300 hover:bg-neutral-50">Open CV (PDF)</a>
+      </div>
     </section>
 
     <!-- Publications section (commented out until available) -->
