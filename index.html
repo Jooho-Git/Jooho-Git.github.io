@@ -26,6 +26,17 @@
     /* Offset for anchor scroll under sticky header */
     :target { scroll-margin-top: 96px; }
   </style>
+
+  <script>
+  document.getElementById("menu-btn").addEventListener("click", function() {
+    const menu = document.getElementById("menu");
+    menu.classList.toggle("hidden");
+    menu.classList.toggle("flex");
+    menu.classList.toggle("flex-col");
+    menu.classList.toggle("mt-4");
+  });
+  </script>
+  
 </head>
 <body class="bg-white text-neutral-900 antialiased">
   <header class="sticky top-0 z-50 border-b border-neutral-200/70 bg-white/90 backdrop-blur">
